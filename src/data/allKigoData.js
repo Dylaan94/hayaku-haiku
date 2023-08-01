@@ -1,313 +1,433 @@
 const spring = {
-  "The Season": {
-    "All Spring": [
+  theSeason: {
+    allSpring: [
       {
         en: "spring",
         jp: "春",
         hiragana: "はる",
         romaji: "haru",
+        description: "Season of Spring",
       },
       {
         en: "warmth",
         jp: "暖かし",
         hiragana: "あたたかし",
         romaji: "atatakashi",
+        description: "Warmth of Spring",
       },
     ],
-    "Early Spring": [
+    earlySpring: [
       {
-        en: "Month of Affection - First lunar month (present-day January)",
+        en: "Month of Affection",
         jp: "睦月",
         hiragana: "むつき",
         romaji: "mutsuki",
+        description: "First lunar month (present-day January)",
       },
       {
-        en: "February - when using the solar calendar",
+        en: "February",
         jp: "二月",
         hiragana: "にがつ",
         romaji: "nigatsu",
+        description: "Second lunar month (present-day February)",
       },
       {
-        en: "First day of spring - First solar term; approx. 4 February",
+        en: "First day of spring",
         jp: "立春",
         hiragana: "りっしゅん",
         romaji: "risshun",
+        description:
+          "The first day of spring, when the sun reaches the celestial longitude of 315°",
       },
       {
-        en: "Usui - Second solar term; approx. 19 February",
+        en: "Usui",
         jp: "雨水",
         hiragana: "うすい",
         romaji: "usui",
+        description: "Second solar term; approx. 19 February",
       },
       {
         en: "Signs of spring",
         jp: "春めく",
         hiragana: "はるめく",
         romaji: "haru meku",
+        description: "Signs of spring emerging",
       },
       {
-        en: "Shunkan - cold weather in early spring",
+        en: "Shunkan",
         jp: "春寒",
         hiragana: "しゅんかん",
         romaji: "shunkan",
+        description: "Cold weather in early spring",
       },
     ],
-    "Mid Spring": [
+    midSpring: [
       {
-        en: "Kisaragi - Second lunar month (present-day February)",
+        en: "Kisaragi",
         jp: "如月",
         hiragana: "きさらぎ",
         romaji: "kisaragi",
+        description: "Second lunar month (present-day February)",
       },
       {
-        en: "March - when using the solar calendar",
+        en: "March",
         jp: "三月",
         hiragana: "さんがつ",
         romaji: "sangatsu",
+        description: "Third lunar month (present-day March)",
       },
       {
-        en: 'Keichitsu - Third solar term; approx. 6 March. Literally translated "awakening hibernating insects", when insects come out of the ground, believed to occur on the first day of the lunar month.',
+        en: "Keichitsu",
         jp: "啓蟄",
         hiragana: "けいちつ",
         romaji: "keichitsu",
+        description:
+          "Third solar term; approx. 6 March. Literally translated 'awakening hibernating insects', when insects come out of the ground, believed to occur on the first day of the lunar month.",
       },
       {
-        en: "Shunbun - Fourth solar term; approx. 20 March. Vernal equinox",
+        en: "Shunbun",
         jp: "春分",
         hiragana: "しゅんぶん",
         romaji: "shunbun",
+        description: "Fourth solar term; approx. 20 March. Vernal equinox",
       },
       {
-        en: "Higan - Buddhist festival associated with the vernal equinox",
+        en: "Higan",
         jp: "彼岸",
         hiragana: "ひがん",
         romaji: "higan",
+        description: "Buddhist festival associated with the vernal equinox",
       },
     ],
-    "Late Spring": [
+    lateSpring: [
       {
-        en: "Yayoi - Third lunar month (present-day March)",
+        en: "Yayoi",
         jp: "弥生",
         hiragana: "やよい",
         romaji: "yayoi",
+        description: "Third lunar month (present-day March)",
       },
       {
-        en: "April - when using the solar calendar",
+        en: "April",
         jp: "四月",
         hiragana: "しがつ",
         romaji: "shigatsu",
+        description: "Fourth lunar month (present-day April)",
       },
       {
-        en: 'Seimei - Fifth solar term; approx. 5 April. Literally translated "clear and bright"; the time when everything becomes lively.',
+        en: "Seimei",
         jp: "清明",
         hiragana: "せいめい",
         romaji: "seimei",
+        description:
+          "Fifth solar term; approx. 5 April. Literally translated 'clear and bright'; the time when everything becomes lively",
       },
       {
-        en: 'Kokū - Sixth solar term; approx. 20 April. Literally translated "grain rain"; the time when the first sprouts of grain appear.',
+        en: "Kokū",
         jp: "穀雨",
         hiragana: "こくう",
         romaji: "kokū",
+        description:
+          "Sixth solar term; approx. 20 April. Literally translated 'grain rain'; the time when the first sprouts of grain appear.",
       },
       {
-        en: "Hanabie - Chilly spring weather when flowers start to become cold.",
+        en: "Hanabie",
         jp: "花冷え",
         hiragana: "はなびえ",
         romaji: "hanabie",
+        description: "Chilly spring weather when flowers start to become cold.",
       },
       {
-        en: "Fading of spring - The time when spring is passing and coming to an end.",
+        en: "Fading of spring",
         jp: "行く春",
         hiragana: "ゆくはる",
         romaji: "yuku haru",
+        description: "The time when spring is passing and coming to an end.",
       },
     ],
   },
-  "The Sky and Heavens": {
-    "All Spring": [
+  theSkyAndTheHeavens: {
+    allSpring: [
       {
         en: "Spring mist or haze",
         jp: "霞",
         hiragana: "かすみ",
         romaji: "kasumi",
+        description: "Mist or haze occurring during spring",
       },
       {
-        en: 'Hazy moon (朧月 oborozuki) - 朧 oboro is a type of mist that obscures the moon; kanji composed of radicals for "moon" (月) and "dragon" (龍)',
+        en: "Hazy moon (朧月 oborozuki)",
         jp: "朧月",
         hiragana: "おぼろづき",
         romaji: "oborozuki",
+        description:
+          "Moon obscured by a type of mist called 'oboro'; kanji composed of radicals for 'moon' (月) and 'dragon' (龍)",
       },
       {
-        en: "Awayuki - Light snowfall",
+        en: "Awayuki",
         jp: "淡雪",
         hiragana: "あわゆき",
         romaji: "awayuki",
+        description: "Snowfall that is light and gentle",
       },
       {
-        en: "Shunjin - Frost and snow blown into the air by the spring wind",
+        en: "Shunjin",
         jp: "春塵",
         hiragana: "しゅんじん",
         romaji: "shunjin",
+        description: "Frost and snow particles carried by the spring wind",
       },
     ],
-    "Early Spring": [
+    earlySpring: [
       {
-        en: "Kaiyose - West wind that blows seashells ashore; traditionally believed to occur on the night of the vernal equinox",
+        en: "Kaiyose",
         jp: "貝寄風",
         hiragana: "かいよせ",
         romaji: "kaiyose",
+        description: "West wind bringing seashells ashore",
       },
     ],
-    "Mid Spring": [
+    midSpring: [
       {
-        en: "Haruichiban - The first strong southerly wind of spring",
+        en: "Haruichiban",
         jp: "春一番",
         hiragana: "はるいちばん",
         romaji: "haruichiban",
+        description: "The first strong southerly wind that occurs in spring",
       },
     ],
-    "Late Spring": [
+    lateSpring: [
       {
-        en: "Wasurejimo - Late frost, also known as 'forgotten frost'",
+        en: "Wasurejimo",
         jp: "忘れ霜",
         hiragana: "わすれじも",
         romaji: "wasurejimo",
+        description: "Frost occurring later in the spring season",
       },
     ],
   },
-  "The Earth": {
-    "All Spring": [],
-    "Early Spring": [],
-    "Mid Spring": [],
-    "Late Spring": [],
-  },
-  Humanity: {
-    Misc: [
+  theEarth: {
+    allSpring: [
       {
-        en: "Spring depression (Shunshū) - A feeling of melancholy or sadness that lasts throughout the spring season",
+        en: "Spring depression",
         jp: "春愁",
         hiragana: "しゅんしゅう",
         romaji: "shunshū",
+        description: "A feeling of melancholy during the spring season",
       },
       {
-        en: "Sowing (Tanemaki) - The act of planting seeds in early spring",
+        en: "Sowing ",
         jp: "種蒔",
         hiragana: "たねまき",
         romaji: "tanemaki",
+        description: "The act of planting seeds in the early spring season",
+      },
+      {
+        en: "pleasant tides ",
+        jp: "春潮",
+        hiragana: "しゅんちょう",
+        romaji: "shunchō",
+        description: "Pleasant tides experienced during spring",
+      },
+      {
+        en: "laughing mountain",
+        jp: "山笑う",
+        hiragana: "やまわらう",
+        romaji: "yamawarau",
+        description: "Mountains seem to be laughing with joy during spring",
+      },
+      {
+        en: "calm sea",
+        jp: "春の海",
+        hiragana: "はるのうみ",
+        romaji: "haru no umi",
+        description: "The sea appears calm and tranquil in spring",
+      },
+    ],
+    earlySpring: [
+      {
+        en: "Thin ice",
+        jp: "薄氷",
+        hiragana: "うすごおり または はくひょう",
+        romaji: "usugōri or hakuhyō",
+        description: "Ice that is not very thick and may crack easily",
+      },
+    ],
+    midSpring: [
+      {
+        en: "Warming of water ",
+        jp: "水温む",
+        hiragana: "みずぬるむ",
+        romaji: "mizu nurumu",
+        description:
+          "The increase in temperature of water bodies during spring",
+      },
+      {
+        en: "Patch of ground without snow ",
+        jp: "雪間",
+        hiragana: "ゆきま",
+        romaji: "yukima",
+        description: "A small area where snow has melted, revealing the ground",
+      },
+    ],
+    lateSpring: [
+      {
+        en: "Seedbed ",
+        jp: "苗代",
+        hiragana: "なえしろ or なわしろ",
+        romaji: "naeshiro or nawashiro",
+        description:
+          "A prepared area of soil where seeds are sown and nurtured",
       },
     ],
   },
-  Observances: {
-    Misc: [
+  humanity: {
+    misc: [
       {
-        en: "Hanamatsuri (Blossom Festival) - A Buddhist festival celebrating the birth of Buddha, held on 8 April",
+        en: "Spring depression",
+        jp: "春愁",
+        hiragana: "しゅんしゅう",
+        romaji: "shunshū",
+        description: "A feeling of melancholy during the spring season",
+      },
+      {
+        en: "Sowing",
+        jp: "種蒔",
+        hiragana: "たねまき",
+        romaji: "tanemaki",
+        description: "The act of planting seeds in the early spring season",
+      },
+    ],
+  },
+  observances: {
+    misc: [
+      {
+        en: "Hanamatsuri (Blossom Festival)",
         jp: "花祭り",
         hiragana: "はなまつり",
         romaji: "hanamatsuri",
+        description: "A Buddhist festival celebrating the birth of Buddha",
       },
       {
-        en: "Hinamatsuri (Girl's Day) - Also known as the Doll Festival, a traditional Japanese festival for girls celebrated on 3 March",
+        en: "Hinamatsuri (Girl's Day)",
         jp: "雛祭",
         hiragana: "ひなまつり",
         romaji: "hinamatsuri",
+        description: "A traditional Japanese festival for girls",
       },
     ],
   },
-  Animals: {
-    Misc: [
+  animals: {
+    misc: [
       {
-        en: "frogs - Noted for their loud singing, they symbolize all spring",
+        en: "frogs",
         jp: "蛙",
         hiragana: "かわず",
         romaji: "kawazu",
+        description: "Symbolize all of spring with their loud singing",
       },
       {
-        en: "skylarks - Noted for their songs in flight, they symbolize all spring",
+        en: "skylarks",
         jp: "雲雀",
         hiragana: "ひばり",
         romaji: "hibari",
+        description: "Symbolize all of spring with their songs in flight",
       },
       {
-        en: "swallows - Symbolize mid-spring",
+        en: "swallows",
         jp: "燕",
         hiragana: "つばめ",
         romaji: "tsubame",
+        description: "Symbolize mid-spring",
       },
       {
-        en: "twittering - Refers to the chirping of songbirds and symbolizes all spring",
+        en: "twittering",
         jp: "囀り",
         hiragana: "さえずり",
         romaji: "saezuri",
+        description: "Refers to the chirping of songbirds during spring",
       },
       {
-        en: "Japanese bush warbler (uguisu) - Symbolizes early spring and is associated with sweet sounds, ume blossoms, and new growth in early Japanese waka. Regarded as a harbinger of spring (harutsugedori, lit. 'bird which announces the arrival of Spring')",
+        en: "Japanese bush warbler",
         jp: "鶯",
         hiragana: "うぐいす",
         romaji: "uguisu",
+        description:
+          "Symbolizes early spring and is associated with sweet sounds, ume blossoms, and new growth",
       },
     ],
   },
-  Plants: {
-    Misc: [
+  plants: {
+    misc: [
       {
-        en: "plum blossom (ume) - Symbolizes early spring",
+        en: "plum blossom (ume)",
         jp: "梅",
         hiragana: "うめ",
         romaji: "ume",
+        description: "Symbolizes early spring",
       },
       {
-        en: "cherry blossoms (sakura) and cherry blossom-viewing (hanami) - Symbolizes late spring (April). For the Japanese, cherry blossoms are such a common topic that in just mentioning blossoms (hana) in haiku it is assumed they are cherry blossoms. Hanami is an occasion for partying with friends or coworkers.",
+        en: "cherry blossoms (sakura) and cherry blossom-viewing (hanami) ",
         jp: "桜",
         hiragana: "さくら",
         romaji: "sakura",
+        description:
+          "Symbolizes late spring (April). Hanami is an occasion for partying with friends or coworkers.",
       },
       {
-        en: "willow (yanagi) - Symbolizes mid-spring",
+        en: "willow ",
         jp: "柳",
         hiragana: "やなぎ",
         romaji: "yanagi",
+        description: "Symbolizes mid-spring",
       },
     ],
   },
 };
 
 const summer = {
-  "The Season": {
-    Misc: [
+  theSeason: {
+    misc: [
       {
-        en: "dog days - Refers to the hottest and most sultry days of summer",
+        en: "dog days",
         jp: "土用",
         hiragana: "どよう",
         romaji: "doyō",
+        description: "Refers to the hottest and most sultry days of summer",
       },
       {
-        en: "midsummer (geshimatsuri) - A festival celebrating the summer solstice",
+        en: "midsummer (geshimatsuri)",
         jp: "夏至祭",
         hiragana: "げしまつり",
         romaji: "geshimatsuri",
+        description: "A festival celebrating the summer solstice",
       },
       {
-        en: "summer (natsu) - Refers to the season of summer",
+        en: "summer (natsu)",
         jp: "夏",
         hiragana: "なつ",
         romaji: "natsu",
+        description: "Refers to the season of summer",
       },
       {
-        en: "May (satsuki or gogatsu), June (minazuki or rokugatsu), July (fumizuki, fuzuki or shichigatsu) - Refers to the months of May, June, and July",
+        en: "May (satsuki or gogatsu), June (minazuki or rokugatsu), July (fumizuki, fuzuki or shichigatsu)",
         jp: "皐月、五月、水無月、六月、文月、七月",
         hiragana: "さつき、ごがつ、みなづき、ろくがつ、ふみづき、しちがつ",
         romaji: "satsuki, gogatsu, minazuki, rokugatsu, fumizuki, shichigatsu",
+        description: "Refers to the months of May, June, and July",
       },
       {
-        en: "hot (atsushi), hotness (atsusa), and hot day (atsuki hi) - Refers to the heat of summer, including sweat and air conditioning in contemporary haiku",
+        en: "hot (atsushi), hotness (atsusa), and hot day (atsuki hi)",
         jp: "暑し、暑さ、暑き日、汗、冷房",
         hiragana: "あつし、あつさ、あつきひ、あせ、れいぼう",
         romaji: "atsushi, atsusa, atsuki hi, ase, reibō",
+        description:
+          "Refers to the heat of summer, including sweat and air conditioning in contemporary haiku",
       },
     ],
   },
-  "The Sky and Heavens": {
-    Misc: [
+  theSkyAndTheHeavens: {
+    misc: [
       {
         en: "rainbow",
         jp: "虹",
@@ -315,38 +435,45 @@ const summer = {
         romaji: "niji",
       },
       {
-        en: "Rainy season (tsuyu) - The Japanese rainy season, usually starting in mid-June",
+        en: "Rainy season (tsuyu)",
         jp: "梅雨",
         hiragana: "つゆ",
         romaji: "tsuyu",
+        description: "The Japanese rainy season, usually starting in mid-June",
       },
       {
-        en: "sea of clouds (unkai) - A phenomenon where clouds fill a valley or basin, resembling a sea",
+        en: "sea of clouds (unkai)",
         jp: "雲海",
         hiragana: "うんかい",
         romaji: "unkai",
+        description:
+          "A phenomenon where clouds fill a valley or basin, resembling a sea",
       },
       {
-        en: "kiu (喜雨) - Refers to the rain that falls after hot and dry weather, bringing joy and relief",
+        en: "kiu (喜雨)",
         jp: "喜雨",
         hiragana: "きう",
         romaji: "kiu",
+        description:
+          "Refers to the rain that falls after hot and dry weather, bringing joy and relief",
       },
       {
-        en: "south wind (minami) - A wind blowing from the south direction",
+        en: "south wind (minami)",
         jp: "南風",
         hiragana: "みなみ",
         romaji: "minami",
+        description: "A wind blowing from the south direction",
       },
     ],
   },
-  "The Earth": {
-    Misc: [
+  theEarth: {
+    misc: [
       {
-        en: "dripping (shitatari) - Referring to water trickling off rocks, moss, etc.",
+        en: "dripping (shitatari)",
         jp: "滴り",
         hiragana: "したたり",
         romaji: "shitatari",
+        description: "Referring to water trickling off rocks, moss, etc.",
       },
       {
         en: "waterfall (taki)",
@@ -356,8 +483,8 @@ const summer = {
       },
     ],
   },
-  Humanity: {
-    Misc: [
+  humanity: {
+    misc: [
       {
         en: "nap or siesta (hirune)",
         jp: "昼寝",
@@ -370,7 +497,6 @@ const summer = {
         hiragana: "はだか",
         romaji: "hadaka",
       },
-
       {
         en: "sushi (寿司, 鮓, 鮨)",
         jp: "寿司、鮓、鮨",
@@ -378,10 +504,11 @@ const summer = {
         romaji: "sushi, sushi, sushi",
       },
       {
-        en: "jinbei (甚平) - traditional informal summer clothes",
+        en: "jinbei (甚平)",
         jp: "甚平",
         hiragana: "じんべい",
         romaji: "jinbei",
+        description: "Traditional informal summer clothes",
       },
       {
         en: "swimming pool (pūru)",
@@ -389,7 +516,6 @@ const summer = {
         hiragana: "ぷーる",
         romaji: "pūru",
       },
-
       {
         en: "surfing",
         jp: "サーフィン",
@@ -416,8 +542,8 @@ const summer = {
       },
     ],
   },
-  Observances: {
-    Misc: [
+  observances: {
+    misc: [
       {
         en: "A-Bomb Anniversary",
         jp: "原爆忌",
@@ -438,8 +564,8 @@ const summer = {
       },
     ],
   },
-  Animals: {
-    Misc: [
+  animals: {
+    misc: [
       {
         en: "cicada",
         jp: "蝉",
@@ -472,8 +598,8 @@ const summer = {
       },
     ],
   },
-  Plants: {
-    Misc: [
+  plants: {
+    misc: [
       {
         en: "lily",
         jp: "百合",
@@ -527,8 +653,8 @@ const summer = {
 };
 
 const autumn = {
-  "The Season": {
-    Misc: [
+  theSeason: {
+    misc: [
       {
         en: "autumn",
         jp: "秋",
@@ -567,8 +693,8 @@ const autumn = {
       },
     ],
   },
-  "The Sky and Heavens": {
-    Misc: [
+  theSkyAndTheHeavens: {
+    misc: [
       {
         en: "Milky Way",
         jp: "天の川",
@@ -607,8 +733,8 @@ const autumn = {
       },
     ],
   },
-  "The Earth": {
-    Misc: [
+  theEarth: {
+    misc: [
       {
         en: "Field of flowers",
         jp: "花野",
@@ -629,8 +755,8 @@ const autumn = {
       },
     ],
   },
-  Humanity: {
-    Misc: [
+  humanity: {
+    misc: [
       {
         en: "Scarecrow",
         jp: "案山子",
@@ -657,8 +783,8 @@ const autumn = {
       },
     ],
   },
-  Observances: {
-    Misc: [
+  observances: {
+    misc: [
       {
         en: "Tanabata",
         jp: "七夕",
@@ -696,8 +822,8 @@ const autumn = {
       },
     ],
   },
-  Animals: {
-    Misc: [
+  animals: {
+    misc: [
       {
         en: "Insects",
         jp: "虫",
@@ -734,8 +860,8 @@ const autumn = {
       },
     ],
   },
-  Plants: {
-    Misc: [
+  plants: {
+    misc: [
       {
         en: "Nashi Pear",
         jp: "梨",
@@ -813,8 +939,8 @@ const autumn = {
 };
 
 const winter = {
-  "The Season": {
-    Misc: [
+  theSeason: {
+    misc: [
       {
         en: "Winter",
         jp: "冬",
@@ -855,8 +981,8 @@ const winter = {
       },
     ],
   },
-  "The Sky and Heavens": {
-    Misc: [
+  theSkyAndTheHeavens: {
+    misc: [
       {
         en: "Snow",
         jp: "雪",
@@ -871,7 +997,7 @@ const winter = {
         hiragana: "こはるびより",
         romaji: "koharubiyori",
         description:
-          "A period of unseasonable warmth, usually occurring in late autumn to early winter, reminiscent of a small spring weather.",
+          "A period of unseasonable warmth, usually occurring in late autumn to early winter, reminiscent of a smallSpring weather.",
       },
       {
         en: "Frost-covered trees",
@@ -895,12 +1021,12 @@ const winter = {
         hiragana: "しぐれ",
         romaji: "shigure",
         description:
-          "Refers to rain that falls in late autumn or early winter, adding a touch of melancholy to the season.",
+          "Refers to rain that falls in late autumn or early winter, adding a touch of melancholy to theSeason.",
       },
     ],
   },
-  "The Earth": {
-    Misc: [
+  theEarth: {
+    misc: [
       {
         en: "Sleeping mountain",
         jp: "山眠る",
@@ -927,8 +1053,8 @@ const winter = {
       },
     ],
   },
-  Humanity: {
-    Misc: [
+  humanity: {
+    misc: [
       {
         en: "Snow-viewing",
         jp: "雪見",
@@ -979,8 +1105,8 @@ const winter = {
       },
     ],
   },
-  Observances: {
-    Misc: [
+  observances: {
+    misc: [
       {
         en: "Christmas",
         jp: "クリスマス",
@@ -1023,8 +1149,8 @@ const winter = {
       },
     ],
   },
-  Animals: {
-    Misc: [
+  animals: {
+    misc: [
       {
         en: "crane",
         jp: "鶴",
@@ -1099,8 +1225,8 @@ const winter = {
       },
     ],
   },
-  Plants: {
-    Misc: [
+  plants: {
+    misc: [
       {
         en: "winter chrysanthemum",
         jp: "冬菊",
@@ -1115,7 +1241,7 @@ const winter = {
         hiragana: "すいせん",
         romaji: "suisen",
         description:
-          "The daffodil, known as 'water immortal,' is a flower that appears in late winter and early spring.",
+          "The daffodil, known as 'water immortal,' is a flower that appears in late winter and earlySpring.",
       },
       {
         en: "ornamental kale",
@@ -1154,8 +1280,8 @@ const winter = {
 };
 
 const newYears = {
-  "The Season": {
-    Misc: [
+  theSeason: {
+    misc: [
       {
         en: "Japanese New Year",
         jp: "正月",
@@ -1214,8 +1340,8 @@ const newYears = {
       },
     ],
   },
-  "The Sky and Heavens": {
-    Misc: [
+  theSkyAndTheHeavens: {
+    misc: [
       {
         en: "First Day",
         jp: "初日",
@@ -1250,8 +1376,8 @@ const newYears = {
       },
     ],
   },
-  Humanity: {
-    Misc: [
+  humanity: {
+    misc: [
       {
         en: "Kadomatsu",
         jp: "門松",
@@ -1310,8 +1436,8 @@ const newYears = {
       },
     ],
   },
-  Observances: {
-    Misc: [
+  observances: {
+    misc: [
       {
         en: "Namahage",
         jp: "生剥",
@@ -1354,8 +1480,8 @@ const newYears = {
       },
     ],
   },
-  Animals: {
-    Misc: [
+  animals: {
+    misc: [
       {
         en: "yomegakimi",
         jp: "嫁が君",
@@ -1398,8 +1524,8 @@ const newYears = {
       },
     ],
   },
-  Plants: {
-    Misc: [
+  plants: {
+    misc: [
       {
         en: "young greens",
         jp: "若菜",
@@ -1428,10 +1554,12 @@ const newYears = {
   },
 };
 
-export default kigoData = {
+const allKigoData = {
   spring,
   summer,
   autumn,
   winter,
   newYears,
 };
+
+export default allKigoData;

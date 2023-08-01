@@ -1,5 +1,10 @@
-import HaikuSelector from "@/components/HaikuSelector";
+import KigoSelector from "@/components/KigoSelector";
+import Header from "@/layout/Header";
 import { useEffect, useState } from "react";
+
+// components
+import Sidebar from "@/components/Sidebar";
+import Generator from "@/components/Generator";
 
 export default function Home() {
   // state to track whether user has clicked submit
@@ -25,12 +30,13 @@ export default function Home() {
   }, [clicked]);
 
   return (
-    <main>
-      <h2 className="text-2xl font-bold text-center"> 早く俳句</h2>
-      <h1 className="text-4xl font-bold text-center">Hayaku Haiku</h1>
-
-      <p className="text-center"> A haiku generator powered by GPT-3</p>
-      <HaikuSelector />
+    <main class="homepage w-full flex flex-col items-center ">
+      <Header />
+      <div className="w-[95%] flex">
+        <Sidebar />
+        <Generator />
+        <KigoSelector />
+      </div>
     </main>
   );
 }
