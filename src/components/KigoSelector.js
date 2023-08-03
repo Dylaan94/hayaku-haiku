@@ -1,6 +1,7 @@
 import allKigoData from "@/data/allKigoData";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 
+// components
 import CustomSelector from "./CustomSelector";
 
 // Options in a three tuple of [English, Japanese, key]
@@ -41,8 +42,6 @@ export default function SpringKigo() {
   const [displaySeasonality, setDisplaySeasonality] = useState(false);
   // state for setting season part
   const [seasonPart, setSeasonPart] = useState("allSpring");
-  // state for storing chosen kigo
-  const [chosenKigo, setChosenKigo] = useState();
 
   useEffect(() => {
     setKigo(allKigoData);
@@ -69,8 +68,6 @@ export default function SpringKigo() {
         : (setSeasonPart("misc"), setDisplaySeasonality(false));
     }
   }, [seasonality]);
-
-  const setClicked = () => {};
 
   return (
     <>
@@ -106,9 +103,11 @@ export default function SpringKigo() {
               labelEn="Kigo"
               labelJp="季語"
               options={kigo[season][seasonality][seasonPart]}
-              setOption={setChosenKigo}
               kigo={true}
             />
+            <h3 className="text-xs italic">
+              This is the kigo that will be used in your Haiku
+            </h3>
           </div>
 
           {/* <div class="kigo-grid grid grid-cols-4 w-full gap-6 pl-4">

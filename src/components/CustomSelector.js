@@ -1,7 +1,10 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
+
+// Context imports
+import KigoContext from "@/context/KigoContext";
 
 // Utility function for conditional classes
 function classNames(...classes) {
@@ -15,6 +18,7 @@ export default function CustomSelector({
   labelJp,
   kigo = false,
 }) {
+  const { setKigoContext } = useContext(KigoContext);
   const [selectedEn, setSelectedEn] = useState(
     kigo ? (options ? options[0].en : "") : options ? options[0][0] : ""
   );
@@ -65,7 +69,7 @@ export default function CustomSelector({
                           "block px-4 py-2 text-sm"
                         )}
                         onClick={() => {
-                          kigo ? setOption(option.jp) : setOption(option[2]);
+                          kigo ? setKigoContext(option) : setOption(option[2]);
                           kigo
                             ? (setSelectedJp(option.jp),
                               setSelectedEn(option.en))

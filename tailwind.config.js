@@ -21,6 +21,7 @@ module.exports = {
         "observances-purple": "#F5E3F9",
         "animals-red": "#F7DDEB",
         "green-plants": "#E3F1E5",
+        "primary-green": "#5BC5B7",
       },
       fontFamily: {
         sans: ["Noto Serif JP", "sans-serif"],
