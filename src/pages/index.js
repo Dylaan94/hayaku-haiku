@@ -13,11 +13,11 @@ export default function Home() {
   // state to track whether user has clicked submit
   const [clicked, setClicked] = useState(false);
   const [kigo, setKigoContext] = useState({
-    en: "spring",
-    jp: "春",
-    hiragana: "はる",
-    romaji: "haru",
-    description: "Season of Spring",
+    en: "summer (natsu)",
+    jp: "夏",
+    hiragana: "なつ",
+    romaji: "natsu",
+    description: "Refers to the season of summer",
   });
 
   useEffect(() => {
